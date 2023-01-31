@@ -51,7 +51,7 @@ The Data/Human_judgments folder contains a subset of sentences per each type tha
 # Code Description
 ## Data generation
 Dataset.ipynb contains script for obtaining and processing names, noun phrases and verb phrases, and generating sentences to form the AmbiCoref Corpus.
-## Evaluation 
+## Model Evaluation 
 The three notebooks prefixed with "Evaluation_" respectively contains script for evaluating the three models on our generated AmbiCoref Corpus.
 ## Human judgements
 Human_judgements.ipynb contains script for generating sub-corpus used for human judgements, and analyzing the results.
