@@ -11,8 +11,11 @@ We release AmbiCoref as a diagnostic corpus for testing whether models treat amb
 The Data/Verb_phrases folder contains the lists of verb phrases and other necessary sentence components that are used to generate the templates. 
 For each type, each relevant list of verb phrases and sentence components is listed as a column in <Type>.csv, where the header of each column represents the corresponding template replacement slot (in curly brackets) as shown in the table below.
 All verbs-phrases have been conjugated as required in the templates.
+	
 Column "Ambig." indicates whether the verb phrase is used for an ambiguous or unambiguous template. If not specified, the verb phrase/sentence component is used in both templates.
+	
 In IC.csv, each item {called} is compatible with any item in {reason_ambig} and {reason_unambig}.   
+	
 In TOP.csv, {event_ambig} and {event_unambig} are strictly compatible to the {passed}, {DO} and {prep} in the same row; some phrases under header "event_amb" and "event_unamb" contain gendered pronoun. They are listed only in masculine forms for convenience but were converted to both masculine and feminine forms when generating sentences, appropriate to the Name<sub>a</sub>] and [Name<sub>b</sub>].
 
 | File | Header         | Ambig.      | Template                                                                                                |
