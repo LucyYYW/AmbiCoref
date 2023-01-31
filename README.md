@@ -1,4 +1,11 @@
-## AmbiCoref Corpus ##
+# AmbiCoref Corpus
+
+Given a sentence ``Abby told Brittney that she upset Courtney'', one would struggle to understand who ``she'' refers to, and ask for clarification. However, if the word ``upset'' were replaced with ``hugged'', ``she'' unambiguously refers to Abby. We study if modern co-reference resolution models are sensitive to such ambiguity.
+To this end, we construct \textbf{AmbiCoref}, a diagnostic corpus of minimal sentence pairs with ambiguous and unambiguous referents.
+Analysis shows that (1) humans are less sure of referents in ambiguous AmbiCoref examples than unambiguous ones, and (2) most coreference models show little difference in output between ambiguous and unambiguous pairs.
+We release AmbiCoref as a diagnostic corpus for testing whether models treat ambiguity similarly to humans.
+  
+
 1. The data/sentences folder contains the AmbiCoref Corpus we generated. 
 * For each type, the ambiguous templates are listed in <Type>_ambiguous.txt and the unambiguous templates are listed in <Type>_unambiguous.txt. 
 * Each line contains a single sentence for the coreference resolution task. To evaluate on our AmbiCoref Corpus, run the coreference resolution system on each line of the file separately. Then compare the results between each minimal pair of ambiguous and unambiguous files.
